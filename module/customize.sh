@@ -9,7 +9,6 @@ _core(){
 
 
 
-
 }
 _check_source(){
 	if [[ ! -e "${TMPDIR}/_mod" ]]; then
@@ -43,20 +42,16 @@ _thanks(){
 }
 _display(){
 	if [[ -e "${MODPATH}/module.prop" ]]; then
-		source ${TMPDIR}/_mod/_display.sh
+		$display
 	fi
 }
-
-
-
-
 
 
 _check_source
 _sign
 #_checktools
 #工具布置
-#_tools "zip"
+_tools "display"
 #选择工具 点滑选择"_chooseToS 时间 次数";音量键选择"chooseport 时间"
 #_choose
 _core
