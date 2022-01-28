@@ -2,7 +2,7 @@
 SKIPUNZIP=1
 
 _core(){
-
+  unzip -o "$ZIPFILE" 'system/*' 'module.prop' -d ${MODPATH} >/dev/null 2>&1
 
 
 
@@ -62,9 +62,9 @@ _display
 
 ##########################################################################################
 # 默认权限请勿删除
-set_perm_recursive $MODPATH 0 0 0755 0644
+set_perm_recursive $MODPATH 0 0 0755 0777
 #set_perm $MODPATH/service.sh 0 0 0777
-#set_perm $MODPATH/module.prop 0 0 0644
+set_perm $MODPATH/module.prop 0 0 0644
 #set_perm $MODPATH/post-fs-data.sh 0 0 0777
 #
 #

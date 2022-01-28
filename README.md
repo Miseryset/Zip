@@ -1,2 +1,4 @@
-# Magisk_Mod_Template
-自用模块模板
+# Zip
+## Magisk 模块
+___
+为没有zip的手机添加zip
